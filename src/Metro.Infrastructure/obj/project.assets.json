@@ -398,6 +398,19 @@
           }
         }
       },
+      "Metro.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Metro.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Metro.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Metro.Application.dll": {}
+        }
+      },
       "Metro.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1100,6 +1113,11 @@
         "version.txt"
       ]
     },
+    "Metro.Application/1.0.0": {
+      "type": "project",
+      "path": "../Metro.Application/Metro.Application.csproj",
+      "msbuildProject": "../Metro.Application/Metro.Application.csproj"
+    },
     "Metro.Core/1.0.0": {
       "type": "project",
       "path": "../Metro.Core/Metro.Core.csproj",
@@ -1108,7 +1126,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Metro.Core >= 1.0.0",
+      "Metro.Application >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.3",
       "System.Data.SqlClient >= 4.8.5"
@@ -1141,8 +1159,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Office Project\\Metro\\src\\Metro.Core\\Metro.Core.csproj": {
-              "projectPath": "D:\\Office Project\\Metro\\src\\Metro.Core\\Metro.Core.csproj"
+            "D:\\Office Project\\Metro\\src\\Metro.Application\\Metro.Application.csproj": {
+              "projectPath": "D:\\Office Project\\Metro\\src\\Metro.Application\\Metro.Application.csproj"
             }
           }
         }

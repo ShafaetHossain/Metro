@@ -30,3 +30,35 @@ D:\Metro\src\Metro.API\obj\Debug\net6.0\refint\Metro.API.dll
 D:\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.pdb
 D:\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.genruntimeconfig.cache
 D:\Metro\src\Metro.API\obj\Debug\net6.0\ref\Metro.API.dll
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\appsettings.Development.json
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\appsettings.json
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.API.exe
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.API.deps.json
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.API.runtimeconfig.json
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.API.dll
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.API.pdb
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.csproj.AssemblyReference.cache
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.AssemblyInfoInputs.cache
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.AssemblyInfo.cs
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.csproj.CoreCompileInputs.cache
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\staticwebassets\msbuild.Metro.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Metro.API.props
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Metro.API.props
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Metro.API.props
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\scopedcss\bundle\Metro.API.styles.css
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.csproj.CopyComplete
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.dll
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\refint\Metro.API.dll
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.pdb
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.genruntimeconfig.cache
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\ref\Metro.API.dll
