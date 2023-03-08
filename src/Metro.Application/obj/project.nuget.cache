@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "zhgnQx6IU3GtZoiW8TjHcrey48Rd12saqzt8GqIyFbNnhFLgDOGcBiyc3d9L+TomxgAMfY4v0Jy2WCRtqbcpow==",
+  "dgSpecHash": "GD3qXcKjOBZQLO6gM3S3EkLbLIzJ+Xgb/rfpoeXUF2wSjxRuyZ/g5yEB8R6UyIf2BHQsJhMVfmTKsNT9yRjgtg==",
   "success": true,
   "projectFilePath": "D:\\Office Project\\Metro\\src\\Metro.Application\\Metro.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

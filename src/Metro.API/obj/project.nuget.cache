@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9/tny6Hx6shi6CF1Li9ucctjlzuXsxzwWh8tTEXxlXeXGXytf2OBDlq2ogeO3wQPqpl5NOfrWoS7113rQ/RtUQ==",
+  "dgSpecHash": "7mZ62jZ9KWoyFxoBuuL4YVRxp8d8B2zo/ZlMJDj+owT5q+GGavPUap9KfP7I9PcLm4QpFdGat+3R5a6x1nXQUQ==",
   "success": true,
   "projectFilePath": "D:\\Office Project\\Metro\\src\\Metro.API\\Metro.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
