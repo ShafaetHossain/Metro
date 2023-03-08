@@ -13,9 +13,9 @@ namespace Metro.Infrastructure.Persistence.EFConfiguration
             //set table name
             builder.ToTable("Schedules");
 
-            builder.Property(x => x.StationFrom)
+            builder.Property(x => x.StationFromId)
                 .IsRequired();
-            builder.Property(x => x.StationTo)
+            builder.Property(x => x.StationToId)
                 .IsRequired();
             builder.Property(x => x.DepartureTime)
                 .IsRequired();

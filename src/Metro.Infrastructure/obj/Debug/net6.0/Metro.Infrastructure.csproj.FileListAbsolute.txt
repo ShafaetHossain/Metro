@@ -1,0 +1,5 @@
+D:\Office Project\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.csproj.AssemblyReference.cache
+D:\Office Project\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Office Project\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.AssemblyInfoInputs.cache
+D:\Office Project\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.AssemblyInfo.cs
+D:\Office Project\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.csproj.CoreCompileInputs.cache
