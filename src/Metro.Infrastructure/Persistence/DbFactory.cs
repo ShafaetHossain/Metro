@@ -11,12 +11,12 @@ namespace Metro.Infrastructure.Persistence
 
         public DbFactory(Func<MetroDbContext> dbContextFactory)
         {
-            _instanceFunc= dbContextFactory;
+            _instanceFunc = dbContextFactory;
         }
 
         public void Dispose()
         {
-            if(_disposed || _dbContext == null) return;
+            if (_disposed || _dbContext == null) return;
             _disposed = true;
             _dbContext.Dispose();
         }

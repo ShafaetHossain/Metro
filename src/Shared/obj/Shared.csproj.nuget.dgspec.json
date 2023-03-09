@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Office Project\\Metro\\src\\Shared\\Shared.csproj": {}
+    "D:\\ang\\Metro\\src\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "D:\\Office Project\\Metro\\src\\Shared\\Shared.csproj": {
+    "D:\\ang\\Metro\\src\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Office Project\\Metro\\src\\Shared\\Shared.csproj",
+        "projectUniqueName": "D:\\ang\\Metro\\src\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "D:\\Office Project\\Metro\\src\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\",
-        "outputPath": "D:\\Office Project\\Metro\\src\\Shared\\obj\\",
+        "projectPath": "D:\\ang\\Metro\\src\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\shafaet\\.nuget\\packages\\",
+        "outputPath": "D:\\ang\\Metro\\src\\Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Md. Shafaet Hossain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shafaet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -6,7 +6,7 @@ namespace Metro.Infrastructure.Persistence
 {
     public class MetroDbContext : DbContext
     {
-        public MetroDbContext(DbContextOptions<MetroDbContext> options) : base(options) 
+        public MetroDbContext(DbContextOptions<MetroDbContext> options) : base(options)
         {
         }
 

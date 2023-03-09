@@ -10,3 +10,15 @@ D:\Office Project\Metro\src\Shared\obj\Debug\net6.0\Shared.dll
 D:\Office Project\Metro\src\Shared\obj\Debug\net6.0\refint\Shared.dll
 D:\Office Project\Metro\src\Shared\obj\Debug\net6.0\Shared.pdb
 D:\Office Project\Metro\src\Shared\obj\Debug\net6.0\ref\Shared.dll
+D:\ang\Metro\src\Shared\bin\Debug\net6.0\Shared.deps.json
+D:\ang\Metro\src\Shared\bin\Debug\net6.0\Shared.dll
+D:\ang\Metro\src\Shared\bin\Debug\net6.0\Shared.pdb
+D:\ang\Metro\src\Shared\obj\Debug\net6.0\Shared.csproj.AssemblyReference.cache
+D:\ang\Metro\src\Shared\obj\Debug\net6.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\ang\Metro\src\Shared\obj\Debug\net6.0\Shared.AssemblyInfoInputs.cache
+D:\ang\Metro\src\Shared\obj\Debug\net6.0\Shared.AssemblyInfo.cs
+D:\ang\Metro\src\Shared\obj\Debug\net6.0\Shared.csproj.CoreCompileInputs.cache
+D:\ang\Metro\src\Shared\obj\Debug\net6.0\Shared.dll
+D:\ang\Metro\src\Shared\obj\Debug\net6.0\refint\Shared.dll
+D:\ang\Metro\src\Shared\obj\Debug\net6.0\Shared.pdb
+D:\ang\Metro\src\Shared\obj\Debug\net6.0\ref\Shared.dll

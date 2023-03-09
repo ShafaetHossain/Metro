@@ -15,3 +15,22 @@ D:\Office Project\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application
 D:\Office Project\Metro\src\Metro.Application\obj\Debug\net6.0\refint\Metro.Application.dll
 D:\Office Project\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application.pdb
 D:\Office Project\Metro\src\Metro.Application\obj\Debug\net6.0\ref\Metro.Application.dll
+D:\ang\Metro\src\Metro.Application\bin\Debug\net6.0\Metro.Application.deps.json
+D:\ang\Metro\src\Metro.Application\bin\Debug\net6.0\Metro.Application.runtimeconfig.json
+D:\ang\Metro\src\Metro.Application\bin\Debug\net6.0\Metro.Application.dll
+D:\ang\Metro\src\Metro.Application\bin\Debug\net6.0\Metro.Application.pdb
+D:\ang\Metro\src\Metro.Application\bin\Debug\net6.0\Metro.Core.dll
+D:\ang\Metro\src\Metro.Application\bin\Debug\net6.0\Shared.dll
+D:\ang\Metro\src\Metro.Application\bin\Debug\net6.0\Metro.Core.pdb
+D:\ang\Metro\src\Metro.Application\bin\Debug\net6.0\Shared.pdb
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application.csproj.AssemblyReference.cache
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application.AssemblyInfoInputs.cache
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application.AssemblyInfo.cs
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application.csproj.CoreCompileInputs.cache
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application.csproj.CopyComplete
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application.dll
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\refint\Metro.Application.dll
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application.pdb
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\Metro.Application.genruntimeconfig.cache
+D:\ang\Metro\src\Metro.Application\obj\Debug\net6.0\ref\Metro.Application.dll
