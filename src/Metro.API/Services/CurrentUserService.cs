@@ -12,6 +12,6 @@ namespace Metro.API.Services
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public Guid? UserId => new Guid(_httpContextAccessor.HttpContext?.User.FindFirstValue("sub"));
+        public Guid? UserId => Guid.NewGuid(); /*new Guid(_httpContextAccessor.HttpContext?.User.FindFirstValue("sub"));*/
     }
 }

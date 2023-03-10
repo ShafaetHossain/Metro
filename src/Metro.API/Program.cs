@@ -19,6 +19,16 @@ builder.Services
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSingleton<ICurrentUserService, CurrentUserService>();
 
+//Enable CORS//Cross site resource sharing
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        b => b.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+    );
+});
+
 var app = builder.Build();
 
 // Auto migrate database
@@ -34,6 +44,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseHttpsRedirection();
+app.UseRouting();
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 

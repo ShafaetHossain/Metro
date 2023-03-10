@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Shared.Commands.Stations;
@@ -8,7 +7,7 @@ namespace Metro.API.Controllers
 {
     [EnableCors("CorsPolicy")]
     [Route("api/[controller]")]
-    [Authorize]
+    //[Authorize]
     [ApiController]
     public class StationController : ControllerBase
     {

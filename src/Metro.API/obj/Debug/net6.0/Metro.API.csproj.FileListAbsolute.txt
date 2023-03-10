@@ -30,12 +30,6 @@ D:\Metro\src\Metro.API\obj\Debug\net6.0\refint\Metro.API.dll
 D:\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.pdb
 D:\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.genruntimeconfig.cache
 D:\Metro\src\Metro.API\obj\Debug\net6.0\ref\Metro.API.dll
-D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.csproj.AssemblyReference.cache
-D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.AssemblyInfoInputs.cache
-D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.AssemblyInfo.cs
-D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.csproj.CoreCompileInputs.cache
-D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.MvcApplicationPartsAssemblyInfo.cache
 D:\ang\Metro\src\Metro.API\bin\Debug\net6.0\appsettings.Development.json
 D:\ang\Metro\src\Metro.API\bin\Debug\net6.0\appsettings.json
 D:\ang\Metro\src\Metro.API\bin\Debug\net6.0\Metro.API.exe
@@ -153,6 +147,7 @@ D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.API.runtimeconfig.j
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.API.dll
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.API.pdb
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\AutoMapper.dll
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Azure.Core.dll
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Azure.Identity.dll
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\FluentValidation.dll
@@ -233,7 +228,13 @@ D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.Application.pdb
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.Infrastructure.pdb
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Metro.Core.pdb
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Shared.pdb
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.csproj.AssemblyReference.cache
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.AssemblyInfoInputs.cache
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.AssemblyInfo.cs
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.csproj.CoreCompileInputs.cache
 D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\Metro.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\staticwebassets\msbuild.Metro.API.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Metro.API.props
 D:\Office Project\Metro\src\Metro.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Metro.API.props
