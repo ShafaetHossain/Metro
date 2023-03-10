@@ -13,6 +13,16 @@ namespace Metro.Infrastructure.Persistence.EFConfiguration
             //set table name
             builder.ToTable("Schedules");
 
+            builder.HasOne<Station>(s => s.StationFrom)
+                .WithMany()
+                .HasForeignKey(s => s.StationFromId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne<Station>(s => s.StationTo)
+                .WithMany()
+                .HasForeignKey(s => s.StationToId)
+                .OnDelete(DeleteBehavior.Restrict);
+
             builder.Property(x => x.StationFromId)
                 .IsRequired();
             builder.Property(x => x.StationToId)

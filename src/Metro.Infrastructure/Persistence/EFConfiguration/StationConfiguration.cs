@@ -13,6 +13,9 @@ namespace Metro.Infrastructure.Persistence.EFConfiguration
             //set table name
             builder.ToTable("Stations");
 
+            //define uniqueness of stationName field
+            builder.HasAlternateKey(x => x.StationName);
+
             builder.Property(x => x.StationName)
                 .HasMaxLength(50)
                 .IsRequired();
