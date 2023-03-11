@@ -10,6 +10,8 @@ using Microsoft.Extensions.Options;
 using Metro.Infrastructure.Repository;
 using Metro.Application.Contracts.Repositories.Command;
 using Metro.Infrastructure.Repository.Command;
+using Metro.Application.Contracts.Repositories.Query;
+using Metro.Infrastructure.Repository.Query;
 
 namespace Metro.Infrastructure
 {
@@ -42,6 +44,7 @@ namespace Metro.Infrastructure
 
         private static IServiceCollection AddRepositories(this IServiceCollection services)
         {
+            services.AddScoped<IStationQueryRepository, StationQueryRepository>();
             services.AddScoped<IStationCommandRepository, StationCommandRepository>();
 
             return services;

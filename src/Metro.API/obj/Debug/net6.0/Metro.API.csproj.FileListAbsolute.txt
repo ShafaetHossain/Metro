@@ -150,6 +150,7 @@ D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\AutoMapper.dll
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Azure.Core.dll
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Azure.Identity.dll
+D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Dapper.dll
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\FluentValidation.dll
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\Office Project\Metro\src\Metro.API\bin\Debug\net6.0\Humanizer.dll

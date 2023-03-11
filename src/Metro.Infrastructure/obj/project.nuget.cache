@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cTyqLur6aJphp5i/B89ynT16cxv5tgl4Q/Qljih9GZ5skQno2zG8VW/6Xbyw7NuWWhIA9YpatzPyj9XIaq2iiQ==",
+  "dgSpecHash": "vAjMnTPJGTG55HxIttjPYSY9SIzWul8+CWy31Ys1qnKeSe+Jlb0KOzzYxnKXOsR5bS/b8czapNYhhGiOZqaRcg==",
   "success": true,
   "projectFilePath": "D:\\Office Project\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

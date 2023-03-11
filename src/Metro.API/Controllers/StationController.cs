@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Metro.Application.Queries.Stations;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Shared.Commands.Stations;
@@ -16,6 +17,12 @@ namespace Metro.API.Controllers
         public StationController(IMediator mediator)
         {
             _mediator = mediator;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllStation([FromQuery] GetAllStationQuery query)
+        {
+            return Ok(await _mediator.Send(query));
         }
 
         [HttpPost]
