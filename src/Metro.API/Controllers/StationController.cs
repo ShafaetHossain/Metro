@@ -25,6 +25,12 @@ namespace Metro.API.Controllers
             return Ok(await _mediator.Send(query));
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetStationById(Guid id)
+        {
+            return Ok(await _mediator.Send(new GetStationByIdQuery(id)));
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreateStation([FromBody] CreateStationCommand command)
         {
