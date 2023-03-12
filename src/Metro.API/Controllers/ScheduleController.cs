@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Metro.Application.Queries.Schedules;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Shared.Commands.Schedules;
@@ -16,6 +17,12 @@ namespace Metro.API.Controllers
         public ScheduleController(IMediator mediator)
         {
             _mediator = mediator;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllSchedule([FromQuery] GetAllScheduleQuery query)
+        {
+            return Ok(await _mediator.Send(query));
         }
 
         [HttpPost]
