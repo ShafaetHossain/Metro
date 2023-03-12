@@ -64,5 +64,17 @@ namespace Metro.Infrastructure.Repository.Query
 
             return (_totalCount, stationList);
         }
+
+        public async Task<Station> GetByIdAsync(Guid id)
+        {
+            DynamicParameters parameters = new DynamicParameters();
+            parameters.Add("@Id", id);
+
+            string query = "SELECT st.Id, st.StationName " +
+                "FROM Station AS st WHERE Id = @Id " +
+                "AND IsDeleted = 0";
+
+            return await SingleAsync(query, parameters);
+        }
     }
 }
