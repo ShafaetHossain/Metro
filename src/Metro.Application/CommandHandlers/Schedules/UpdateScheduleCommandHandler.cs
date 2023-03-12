@@ -33,7 +33,7 @@ namespace Metro.Application.CommandHandlers.Schedules
             {
                 throw new NotFoundException("Schedule not found");
             }
-            //map request type to entity(table) type so that we can insert
+            //map request type to entity(table) type so that we can update
             var scheduleEntity = _mapper.Map<UpdateScheduleCommand, Schedule>(request, currentSchedule);
 
             //update the entity and collect the response

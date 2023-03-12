@@ -36,18 +36,16 @@ namespace Metro.Application.CommandHandlers.Stations
             {
                 throw new NotFoundException("Station data not found");
             }
-            //map request type to entity(table) type so that we can insert
+            //map request type to entity(table) type so that we can update
             var stationEntity = _mapper.Map<UpdateStationCommand, Station>(request, currentStation);
 
             //update the entity and collect the response
-            //var updateStationEntity = _stationCommandRepository.UpdateAsync(stationEntity);
-            _stationCommandRepository.UpdateAsync(stationEntity);
-            var updateStationEntity = await _stationQueryRepository.GetByIdAsync(request.Id);
+            var updateStationEntity = _stationCommandRepository.UpdateAsync(stationEntity);
 
             //commit changes
             await _unitOfWork.CommitAsync(cancellationToken);
 
-            return _mapper.Map<StationResponseDTO>(updateStationEntity);
+            return _mapper.Map<StationResponseDTO>(updateStationEntity.Result);
         }
     }
 }
