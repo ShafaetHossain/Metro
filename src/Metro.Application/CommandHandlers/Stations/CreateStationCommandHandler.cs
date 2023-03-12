@@ -32,7 +32,7 @@ namespace Metro.Application.CommandHandlers.Stations
             //commit changes
             await _unitOfWork.CommitAsync(cancellationToken);
 
-            return _mapper.Map<StationResponseDTO>(request);
+            return _mapper.Map<StationResponseDTO>(newEntity);
         }
     }
 }
