@@ -71,7 +71,7 @@ namespace Metro.Infrastructure.Repository.Query
             parameters.Add("@Id", id);
 
             string query = "SELECT st.Id, st.StationName " +
-                "FROM Station AS st WHERE Id = @Id " +
+                "FROM Stations AS st WHERE Id = @Id " +
                 "AND IsDeleted = 0";
 
             return await SingleAsync(query, parameters);
