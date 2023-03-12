@@ -48,6 +48,7 @@ namespace Metro.Infrastructure
             services.AddScoped<IStationCommandRepository, StationCommandRepository>();
             services.AddScoped<IScheduleQueryRepository, ScheduleQueryRepository>();
             services.AddScoped<IScheduleCommandRepository, ScheduleCommandRepository>();
+            services.AddScoped<IUserCommandRepository, UserCommandRepository>();
 
             return services;
         }
