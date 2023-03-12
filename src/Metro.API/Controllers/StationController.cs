@@ -36,5 +36,16 @@ namespace Metro.API.Controllers
         {
             return Ok(await _mediator.Send(command));
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateStation(Guid id, [FromBody] UpdateStationCommand command)
+        {
+            if(command.Id == id)
+            {
+                return Ok(await _mediator.Send(command));
+            }
+
+            return BadRequest();
+        }
     }
 }
