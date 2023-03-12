@@ -41,7 +41,7 @@ namespace Metro.Infrastructure.Repository.Query
             if (filter.Length > 0) query += filter;
 
             //order by 
-            query += " ORDER BY st.CreatedDate DESC, st.LastModifiedDate DESC ";
+            query += " ORDER BY sch.CreatedDate DESC, sch.LastModifiedDate DESC ";
 
             //pagination condition is implemented only if pageSize and offset value is valid
             if (pageSize > 1 && offset >= 0)
