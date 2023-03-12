@@ -7,5 +7,6 @@ namespace Metro.Application.Contracts.Repositories.Query
     public interface IScheduleQueryRepository : IMultipleResultQueryRepository<Schedule>
     {
         Task<(long, IEnumerable<Schedule>)> GetAllAsync(GetAllScheduleQuery request);
+        Task<Schedule> GetByIdAsync(Guid scheduleId);
     }
 }

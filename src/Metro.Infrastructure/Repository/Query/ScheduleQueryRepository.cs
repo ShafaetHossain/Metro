@@ -58,5 +58,19 @@ namespace Metro.Infrastructure.Repository.Query
 
             return (_totalCount, scheduleList);
         }
+
+        public async Task<Schedule> GetByIdAsync(Guid id)
+        {
+            DynamicParameters parameters = new DynamicParameters();
+            parameters.Add("@Id", id);
+
+            string query = "SELECT sch.Id, sch.StationFromId, " +
+                            "sch.StationToId, sch.DepartureTime, " +
+                            "sch.TotalSeat, sch.SeatBooked, sch.Price " +
+                            "FROM Schedules AS sch WHERE Id = @Id " +
+                            "AND IsDeleted = 0";
+
+            return await SingleAsync(query, parameters);
+        }
     }
 }
