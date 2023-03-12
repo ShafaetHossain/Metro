@@ -25,6 +25,12 @@ namespace Metro.API.Controllers
             return Ok(await _mediator.Send(query));
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetScheduleById(Guid id)
+        {
+            return Ok(await _mediator.Send(new GetScheduleByIdQuery(id)));
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreateSchedule([FromBody] CreateScheduleCommand command)
         {
