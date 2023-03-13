@@ -1,24 +1,3 @@
-D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.deps.json
-D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.runtimeconfig.json
-D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.dll
-D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.pdb
-D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Application.dll
-D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Core.dll
-D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Shared.dll
-D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Application.pdb
-D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Core.pdb
-D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Shared.pdb
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.csproj.AssemblyReference.cache
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.AssemblyInfoInputs.cache
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.AssemblyInfo.cs
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.csproj.CoreCompileInputs.cache
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.csproj.CopyComplete
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.dll
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\refint\Metro.Infrastructure.dll
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.pdb
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.genruntimeconfig.cache
-D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\ref\Metro.Infrastructure.dll
 D:\Office Project\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.deps.json
 D:\Office Project\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.runtimeconfig.json
 D:\Office Project\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.dll
@@ -40,3 +19,24 @@ D:\Office Project\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\refint\Metro.I
 D:\Office Project\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.pdb
 D:\Office Project\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.genruntimeconfig.cache
 D:\Office Project\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\ref\Metro.Infrastructure.dll
+D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.deps.json
+D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.runtimeconfig.json
+D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.dll
+D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Infrastructure.pdb
+D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Application.dll
+D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Core.dll
+D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Shared.dll
+D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Application.pdb
+D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Metro.Core.pdb
+D:\ang\Metro\src\Metro.Infrastructure\bin\Debug\net6.0\Shared.pdb
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.csproj.AssemblyReference.cache
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.AssemblyInfoInputs.cache
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.AssemblyInfo.cs
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.csproj.CoreCompileInputs.cache
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.csproj.CopyComplete
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.dll
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\refint\Metro.Infrastructure.dll
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.pdb
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\Metro.Infrastructure.genruntimeconfig.cache
+D:\ang\Metro\src\Metro.Infrastructure\obj\Debug\net6.0\ref\Metro.Infrastructure.dll
