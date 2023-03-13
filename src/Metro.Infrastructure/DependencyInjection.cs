@@ -12,6 +12,7 @@ using Metro.Application.Contracts.Repositories.Command;
 using Metro.Infrastructure.Repository.Command;
 using Metro.Application.Contracts.Repositories.Query;
 using Metro.Infrastructure.Repository.Query;
+using Metro.Application.Contracts.Repositories.Query.Base;
 
 namespace Metro.Infrastructure
 {
@@ -48,6 +49,7 @@ namespace Metro.Infrastructure
             services.AddScoped<IStationCommandRepository, StationCommandRepository>();
             services.AddScoped<IScheduleQueryRepository, ScheduleQueryRepository>();
             services.AddScoped<IScheduleCommandRepository, ScheduleCommandRepository>();
+            services.AddScoped<IUserQueryRepository, UserQueryRepository>();
             services.AddScoped<IUserCommandRepository, UserCommandRepository>();
 
             return services;
