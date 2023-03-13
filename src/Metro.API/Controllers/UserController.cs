@@ -18,8 +18,14 @@ namespace Metro.API.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost]
+        [HttpPost("register")]
         public async Task<IActionResult> CreateUser([FromBody] CreateUserCommand command)
+        {
+            return Ok(await _mediator.Send(command));
+        }
+
+        [HttpPost("authenticate")]
+        public async Task<IActionResult> AuthenticateUser([FromBody] AuthenticateUserCommand command)
         {
             return Ok(await _mediator.Send(command));
         }
