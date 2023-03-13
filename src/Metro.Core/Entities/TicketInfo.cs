@@ -8,5 +8,6 @@ namespace Metro.Core.Entities
         public virtual Schedule Schedule { get; set; }
         public Guid UserId { get; set; }
         public virtual User User { get; set; }
+        public int BuySeat { get; set; }
     }
 }
