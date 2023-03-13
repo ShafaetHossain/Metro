@@ -10,8 +10,8 @@ namespace Metro.Application.CommandHandlers.Users
 {
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, UserResponseDTO>
     {
-        private IUserCommandRepository _userCommandRepository;
-        private IUnitOfWork _unitOfWork;
+        private readonly IUserCommandRepository _userCommandRepository;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
         public CreateUserCommandHandler(IUserCommandRepository userCommandRepository, IUnitOfWork unitOfWork, IMapper mapper)
