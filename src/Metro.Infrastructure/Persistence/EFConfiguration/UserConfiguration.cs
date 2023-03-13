@@ -18,7 +18,7 @@ namespace Metro.Infrastructure.Persistence.EFConfiguration
                 .IsRequired();
 
             builder.Property(x => x.Email)
-                .HasMaxLength(25)
+                .HasMaxLength(50)
                 .IsRequired();
 
             builder.Property(x => x.Password)
