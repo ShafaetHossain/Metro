@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "V14qHBUj1r72xqXMi+7JsXCYazadWWA0C0UT/q4Jn4FmsnGjS0KDZgSEHk++3S+gaFp0jfk0isKjNnv3RHg7wg==",
+  "dgSpecHash": "hfw7Cdu7c2UURxHiVCsGd3RWMKEBHVkhAwRJyz/sh8inRAs7aI/9H6LUjHu6EV9Q728UpEv3jE9IfUtHgPRTTg==",
   "success": true,
-  "projectFilePath": "D:\\ang\\Metro\\src\\Shared\\Shared.csproj",
+  "projectFilePath": "D:\\Office Project\\Metro\\src\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\shafaet\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
-    "C:\\Users\\shafaet\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }
