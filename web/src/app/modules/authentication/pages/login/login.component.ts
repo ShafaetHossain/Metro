@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { environment } from '../../../../../environments/environment';
+import { HttpService } from '../../../../core/services/http.service';
 
 @Component({
   selector: 'app-login',
@@ -15,6 +17,7 @@ export class LoginComponent implements OnInit {
   loginForm!:FormGroup;
   constructor(
     private fb: FormBuilder,
+    public httpService: HttpService,
     //  private userservice: UserService,
       // private router: Router,
       // private toast: NgToastService
@@ -22,7 +25,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
-      username: ['', Validators.required],
+      email: ['', Validators.required],
       password: ['', Validators.required]
     })
   }
@@ -34,8 +37,21 @@ export class LoginComponent implements OnInit {
   }
 
   onClickLogin(){
+    console.log("herer");
     if(this.loginForm.valid){
-      
+      console.log("dasdasd", this.loginForm.value);
+      this.httpService.login(
+        environment.Base_URL_Metro,
+        'user/authenticate',
+        this.loginForm.value
+      ).subscribe({
+        next:(res) => {
+          console.log("success");
+        },
+        error:(err) => {
+          console.log("failed");
+        }
+      })
     }
     else{
       console.log("Failed");
