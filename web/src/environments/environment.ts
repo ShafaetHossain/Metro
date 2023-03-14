@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+
+  ///........................Service URLs STARTS........................///
+  
+  Base_URL_Metro: 'http://localhost:5187/api'
 };
 
 /*
