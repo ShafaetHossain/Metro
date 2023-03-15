@@ -10,21 +10,21 @@ export const navItems: INavData[] = [
       text: 'NEW'
     }
   },
-  {
-    title: true,
-    name: 'Theme'
-  },
-  {
-    name: 'Colors',
-    url: '/theme/colors',
-    iconComponent: { name: 'cil-drop' }
-  },
-  {
-    name: 'Typography',
-    url: '/theme/typography',
-    linkProps: { fragment: 'someAnchor' },
-    iconComponent: { name: 'cil-pencil' }
-  },
+  // {
+  //   title: true,
+  //   name: 'Theme'
+  // },
+  // {
+  //   name: 'Colors',
+  //   url: '/theme/colors',
+  //   iconComponent: { name: 'cil-drop' }
+  // },
+  // {
+  //   name: 'Typography',
+  //   url: '/theme/typography',
+  //   linkProps: { fragment: 'someAnchor' },
+  //   iconComponent: { name: 'cil-pencil' }
+  // },
   {
     name: 'Components',
     title: true
@@ -206,6 +206,21 @@ export const navItems: INavData[] = [
     ]
   },
   {
+    name: 'Metro',
+    url: '/metro',
+    iconComponent: { name: 'cil-bell' },
+    children: [
+      {
+        name: 'Station',
+        url: '/metro/station'
+      },
+      {
+        name: 'Schedule',
+        url: '/metro/schedule'
+      }
+    ]
+  },
+  {
     name: 'Widgets',
     url: '/widgets',
     iconComponent: { name: 'cil-calculator' },
@@ -214,31 +229,31 @@ export const navItems: INavData[] = [
       text: 'NEW'
     }
   },
-  {
-    title: true,
-    name: 'Extras'
-  },
-  {
-    name: 'Pages',
-    url: '/login',
-    iconComponent: { name: 'cil-star' },
-    children: [
-      {
-        name: 'Login',
-        url: '/login'
-      },
-      {
-        name: 'Register',
-        url: '/register'
-      },
-      {
-        name: 'Error 404',
-        url: '/404'
-      },
-      {
-        name: 'Error 500',
-        url: '/500'
-      }
-    ]
-  },
+  // {
+  //   title: true,
+  //   name: 'Extras'
+  // },
+  // {
+  //   name: 'Pages',
+  //   url: '/login',
+  //   iconComponent: { name: 'cil-star' },
+  //   children: [
+  //     {
+  //       name: 'Login',
+  //       url: '/login'
+  //     },
+  //     {
+  //       name: 'Register',
+  //       url: '/register'
+  //     },
+  //     {
+  //       name: 'Error 404',
+  //       url: '/404'
+  //     },
+  //     {
+  //       name: 'Error 500',
+  //       url: '/500'
+  //     }
+  //   ]
+  // },
 ];

@@ -70,6 +70,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./views/pages/pages.module').then((m) => m.PagesModule)
       },
+      {
+        path: 'metro',
+        loadChildren: () =>
+          import('./views/metro/metro.module').then((m) => m.MetroModule)
+      },
     ]
   },
   {
