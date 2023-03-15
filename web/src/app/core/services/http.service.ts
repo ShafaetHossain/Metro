@@ -30,6 +30,12 @@ export class HttpService {
     .post<T>(`${url}/${endpoint}`, JSON.stringify(item), this.httpOptions)
   }
 
+  put<T>(url: string, endpoint: string, item: T, id: any): Observable<T> {
+    return this.httpClient
+      .put<T>(`${url}/${endpoint}`, JSON.stringify(item), this.httpOptions)
+      .pipe(retry(0), catchError(this.handleError));
+  }
+
   private handleError(error: HttpErrorResponse) {
     let errorMessage = '';
 
