@@ -46,5 +46,12 @@ namespace Metro.API.Controllers
             }
             return BadRequest();
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteSchedule(Guid id)
+        {
+            var response = await _mediator.Send(new DeleteScheduleCommand(id));
+            return Ok(new { result = response });
+        }
     }
 }
