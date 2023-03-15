@@ -22,6 +22,7 @@ import { IconModule } from '@coreui/icons-angular';
 import { StationComponent } from './pages/station/station.component';
 import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { ScheduleAddEditComponent } from './pages/schedule/schedule-add-edit/schedule-add-edit.component';
+import { StationAddEditComponent } from './pages/station/station-add-edit/station-add-edit.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ScheduleAddEditComponent } from './pages/schedule/schedule-add-edit/sch
   
     StationComponent,
     ScheduleComponent,
-    ScheduleAddEditComponent
+    ScheduleAddEditComponent,
+    StationAddEditComponent
   ],
   imports: [
     CommonModule,

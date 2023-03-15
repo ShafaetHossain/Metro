@@ -37,9 +37,7 @@ export class ScheduleAddEditComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    debugger;
     this.activateRouter.paramMap.subscribe((params) => {
-      debugger;
       this.scheduleId = params.get('id') || '';
       if(this.scheduleId == '') this.isAddMode = true;
       else this.isAddMode = false;
