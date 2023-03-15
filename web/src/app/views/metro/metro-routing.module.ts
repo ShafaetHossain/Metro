@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ScheduleAddEditComponent } from './pages/schedule/schedule-add-edit/schedule-add-edit.component';
 import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { StationComponent } from './pages/station/station.component';
+import { StationAddEditComponent } from './pages/station/station-add-edit/station-add-edit.component';
 
 const routes: Routes = [
     {
@@ -16,6 +17,22 @@ const routes: Routes = [
           component: StationComponent,
           data: {
             title: 'Stations',
+            reuse: false
+          }
+        },
+        {
+          path: 'station/add',
+          component: StationAddEditComponent,
+          data: {
+            title: 'Add Stations',
+            reuse: false
+          }
+        },
+        {
+          path: 'station/edit/:id',
+          component: StationAddEditComponent,
+          data: {
+            title: 'Edit Stations',
             reuse: false
           }
         },
