@@ -4,6 +4,7 @@ import { Subject } from 'rxjs';
 import { environment } from '../../../../../environments/environment';
 import { Station } from '../../../../core/models/station/station.model';
 import { HttpService } from '../../../../core/services/http.service';
+import { RoutingService } from '../../../../core/services/routing.service';
 
 @Component({
   selector: 'app-station',
@@ -24,6 +25,7 @@ export class StationComponent implements OnInit {
   constructor(
     private httpService : HttpService,
     private formBuilder: FormBuilder,
+    private navigateService: RoutingService,
   ){}
 
   ngOnInit(): void {
@@ -41,6 +43,14 @@ export class StationComponent implements OnInit {
         console.log(err);
       },
     });
+  }
+
+  addOrEdit(id: string | undefined | null){
+    debugger;
+    this.navigateService.navigate(
+      '/metro/station/' + (id != null ? 'edit/' + id : 'add'),
+      id != null ? 'Edit Station' : 'Add Station'
+    );
   }
 
 }
