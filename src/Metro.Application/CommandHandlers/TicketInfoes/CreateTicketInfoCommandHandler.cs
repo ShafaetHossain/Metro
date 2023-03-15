@@ -28,7 +28,7 @@ namespace Metro.Application.CommandHandlers.TicketInfoes
 
         public async Task<TicketInfoResponseDTO> Handle(CreateTicketInfoCommand request, CancellationToken cancellationToken)
         {
-            var schedule = _scheduleQueryRepository.GetByIdAsync(request.ScheduleId);
+            var schedule = await _scheduleQueryRepository.GetByIdAsync(request.ScheduleId);
             var scheduleEntity = _mapper.Map<Schedule>(schedule);
 
             if(scheduleEntity.TotalSeat - scheduleEntity.SeatBooked < request.BuySeat)
@@ -40,12 +40,10 @@ namespace Metro.Application.CommandHandlers.TicketInfoes
             var entity = _mapper.Map<TicketInfo>(request);
             //insert the entity and collect the response
             var newEntity = await _ticketInfoCommandRepository.InsertAsync(entity);
-            //commit changes
-            await _unitOfWork.CommitAsync(cancellationToken);
 
             //update the entity and collect the response
             scheduleEntity.SeatBooked += request.BuySeat;
-            var updateScheduleEntity = _scheduleCommandRepository.UpdateAsync(scheduleEntity);
+            var updateScheduleEntity = await _scheduleCommandRepository.UpdateAsync(scheduleEntity);
             //commit changes
             await _unitOfWork.CommitAsync(cancellationToken);
 

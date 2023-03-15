@@ -37,12 +37,12 @@ namespace Metro.Application.CommandHandlers.Schedules
             var scheduleEntity = _mapper.Map<UpdateScheduleCommand, Schedule>(request, currentSchedule);
 
             //update the entity and collect the response
-            var updateScheduleEntity = _scheduleCommandRepository.UpdateAsync(scheduleEntity);
+            var updateScheduleEntity = await _scheduleCommandRepository.UpdateAsync(scheduleEntity);
 
             //commit changes
             await _unitOfWork.CommitAsync(cancellationToken);
 
-            return _mapper.Map<ScheduleResponseDTO>(updateScheduleEntity.Result);
+            return _mapper.Map<ScheduleResponseDTO>(updateScheduleEntity);
         }
     }
 }
