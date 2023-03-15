@@ -15,6 +15,7 @@ namespace Metro.Application.Common.Mappings
             //Command to Domain
             CreateMap<Station, CreateStationCommand>().ReverseMap();
             CreateMap<Station, UpdateStationCommand>().ReverseMap();
+            CreateMap<Station, DeleteStationCommand>().ReverseMap();
         }
     }
 }

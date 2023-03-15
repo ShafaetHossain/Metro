@@ -15,6 +15,7 @@ namespace Metro.Application.Common.Mappings
             //Command to Domain
             CreateMap<Schedule, CreateScheduleCommand>().ReverseMap();
             CreateMap<Schedule, UpdateScheduleCommand>().ReverseMap();
+            CreateMap<Schedule, DeleteScheduleCommand>().ReverseMap();
         }
     }
 }
