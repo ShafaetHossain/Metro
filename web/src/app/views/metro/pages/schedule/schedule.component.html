@@ -1,0 +1,53 @@
+<c-card>
+  <div class="card-header">
+    <h5>Schedule List</h5>
+  </div>
+  <c-container>
+    <c-row>
+      <div class="table-responsive">
+        <table class="table table-bordered row-border hover">
+          <thead>
+            <tr>
+              <th>From</th>
+              <th>To</th>
+              <th>Departure Time</th>
+              <th>Total Seat</th>
+              <th>Seat Available</th>
+              <th>Price</th>
+              <th class="text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="scheduleList?.length!=0">
+            <tr *ngFor="let item of scheduleList">
+              <td>{{ item.stationFromId }}</td>
+              <td>{{ item.stationToId }}</td>
+              <td>{{ item.departureTime }}</td>
+              <td>{{ item.totalSeat }}</td>
+              <td>{{ item.totalSeat - item.seatBooked }}</td>
+              <td>{{ item.price }}</td>
+              <td class="text-center">
+                <button class="ang-btn-edit ang-icon-btn" cButton color="success" variant="outline"  title="edit">
+                  <svg cIcon name="cilPencil" class="ang-icon-edit" size="sm"></svg>
+                </button>
+                <button class="ang-icon-btn" cButton color="danger" variant="outline" title="delete" >
+                  <svg cIcon name="cilTrash" class="ang-icon-delete" size="sm"></svg>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="scheduleList?.length==0">
+            <tr>
+              <td colspan="6" class="no-data-available">No data!</td>
+              <td style="display: none"></td>
+              <td style="display: none"></td>
+              <td style="display: none"></td>
+              <td style="display: none"></td>
+              <td style="display: none"></td>
+              <td style="display: none"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </c-row>
+  </c-container>
+</c-card>
