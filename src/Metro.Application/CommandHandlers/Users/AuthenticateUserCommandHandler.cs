@@ -17,8 +17,8 @@ namespace Metro.Application.CommandHandlers.Users
 
         public async Task<string> Handle(AuthenticateUserCommand request, CancellationToken cancellationToken)
         {
-            var user = _userQueryRepository.GetByEmailAsync(request);
-            if(user.Result == null)
+            var user = await _userQueryRepository.GetByEmailAsync(request);
+            if(user == null)
             {
                 throw new NotFoundException(ValidationError.UserNotFound);
             }
