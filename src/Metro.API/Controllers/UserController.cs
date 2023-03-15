@@ -27,7 +27,8 @@ namespace Metro.API.Controllers
         [HttpPost("authenticate")]
         public async Task<IActionResult> AuthenticateUser([FromBody] AuthenticateUserCommand command)
         {
-            return Ok(await _mediator.Send(command));
+            var response = await _mediator.Send(command);
+            return Ok(new {result = response});
         }
     }
 }
