@@ -10,10 +10,10 @@ namespace Metro.Application.Common.Mappings
         public TicketInfoMappingProfile() 
         {
             //DTO to Domain
-            CreateMap<TicketInfo, TicketInfoResponseDTO>();
+            CreateMap<TicketInfo, TicketInfoResponseDTO>().ReverseMap();
 
             //Command to Domain
-            CreateMap<TicketInfo, CreateTicketInfoCommand>();
+            CreateMap<TicketInfo, CreateTicketInfoCommand>().ReverseMap();
         }
     }
 }
