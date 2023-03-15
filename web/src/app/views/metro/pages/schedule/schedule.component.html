@@ -4,6 +4,13 @@
   </div>
   <c-container>
     <c-row>
+      <div class="col-sm-5 text-start mb-3 mt-3">
+        <button class="btn btn-outline-primary" shape="rounded-0" (click)="addOrEdit(null)">Add
+          <svg cIcon name="cil-plus"></svg>
+        </button>
+      </div>
+    </c-row>
+    <c-row mt-2>
       <div class="table-responsive">
         <table class="table table-bordered row-border hover">
           <thead>
@@ -26,7 +33,8 @@
               <td>{{ item.totalSeat - item.seatBooked }}</td>
               <td>{{ item.price }}</td>
               <td class="text-center">
-                <button class="ang-btn-edit ang-icon-btn" cButton color="success" variant="outline"  title="edit">
+                <button class="ang-btn-edit ang-icon-btn" cButton color="success" variant="outline"  title="edit"
+                        (click)="addOrEdit(item.id)">
                   <svg cIcon name="cilPencil" class="ang-icon-edit" size="sm"></svg>
                 </button>
                 <button class="ang-icon-btn" cButton color="danger" variant="outline" title="delete" >

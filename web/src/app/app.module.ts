@@ -45,7 +45,11 @@ import {
   UtilitiesModule,
 } from '@coreui/angular';
 
+import { NgxsModule } from '@ngxs/store';
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { environment } from '../environments/environment';
+import { TabState } from './core/services/tab-management.state';
+import { PermissionState } from './core/services/permission.state';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -87,6 +91,9 @@ const APP_CONTAINERS = [
     ListGroupModule,
     CardModule,
     HttpClientModule,
+    NgxsModule.forRoot([TabState, PermissionState], {
+      developmentMode: !environment.production,
+    }),
   ],
   providers: [
     {

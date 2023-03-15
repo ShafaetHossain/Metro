@@ -21,13 +21,15 @@ import {
 import { IconModule } from '@coreui/icons-angular';
 import { StationComponent } from './pages/station/station.component';
 import { ScheduleComponent } from './pages/schedule/schedule.component';
+import { ScheduleAddEditComponent } from './pages/schedule/schedule-add-edit/schedule-add-edit.component';
 
 @NgModule({
   declarations: [
     
   
     StationComponent,
-             ScheduleComponent
+    ScheduleComponent,
+    ScheduleAddEditComponent
   ],
   imports: [
     CommonModule,
