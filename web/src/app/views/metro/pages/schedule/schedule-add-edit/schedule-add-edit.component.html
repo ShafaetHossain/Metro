@@ -1,0 +1,67 @@
+<c-card>
+  <div class="card-header">
+    <h5 *ngIf="isAddMode">Add Schedule</h5>
+    <h5 *ngIf="!isAddMode">Edit Schedule</h5>
+  </div>
+  <c-card-body>
+    <form [formGroup]="scheduleForm">
+      <input type="hidden" formControlName="id" />
+      <c-container>
+        <div class="container  mt-4">
+          <div class="row mb-2 ">
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25">From</p>
+              <select aria-label="label select example" style="width:187px;" cSelect id="stationFromId"
+                formControlName="stationFromId" name="stationFromId">
+                <option value="{{null}}">Select</option>
+                <option *ngFor='let item of stationList' value="{{item.id}}">
+                  {{item.stationName}}
+                </option>
+              </select>
+            </div>
+
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25">To</p>
+              <select style="width:187px;" aria-label="label select example" cSelect id="stationToId"
+                formControlName="stationToId" name="stationToId">
+                <option value="{{null}}">Select</option>
+                <option *ngFor='let item of stationList' value="{{item.id}}">
+                  {{item.stationName}}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25 ">Total Seat</p>
+              <input type="number" formControlName="totalSeat">
+            </div>
+
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25">Seat booked</p>
+              <input type="number" formControlName="seatBooked">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25">Departure time</p>
+              <input type="date" style="width:187px;" formControlName="departureTime">
+            </div>
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25 ">Price</p>
+              <input type="number" formControlName="price">
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-sm-5 text-start mb-3 mt-3">
+              <button type="submit" class="btn-save" (click)="onSubmit()">
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </c-container>
+    </form>
+  </c-card-body>
+</c-card>
