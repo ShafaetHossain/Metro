@@ -1,0 +1,26 @@
+<c-card>
+  <div class="card-header">
+    <h5 *ngIf="isAddMode">Add Station</h5>
+    <h5 *ngIf="!isAddMode">Edit Station</h5>
+  </div>
+  <c-card-body>
+    <form [formGroup]="stationForm">
+      <input type="hidden" formControlName="id" />
+      <c-container>
+        <div class="row mb-2 ">
+          <div class="col d-flex align-items-center">
+            <p class="me-2 mb-0 w-25">Station Name</p>
+            <input type="text" style="width:187px;" formControlName="stationName">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-sm-5 text-start mb-3 mt-3">
+            <button type="submit" class="btn-save" (click)="onSubmit()">
+              Save
+            </button>
+          </div>
+        </div>
+      </c-container>
+    </form>
+  </c-card-body>
+</c-card>
