@@ -1,2 +1,11 @@
 // Here you can add other styles
 
+.btn-save,.btn-update{
+  border : 1px solid var(--cui-btn-border-color)  !important;
+  @extend .btn;
+  @extend .btn-outline-success;
+  margin:0 0.25rem;
+  padding: var(--cui-btn-padding-y) var(--cui-btn-padding-x);
+  min-width: 4rem;
+
+}
