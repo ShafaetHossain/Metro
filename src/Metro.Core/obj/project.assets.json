@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Office Project\\Metro\\src\\Metro.Core\\Metro.Core.csproj",
+      "projectUniqueName": "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj",
       "projectName": "Metro.Core",
-      "projectPath": "D:\\Office Project\\Metro\\src\\Metro.Core\\Metro.Core.csproj",
+      "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj",
       "packagesPath": "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\",
-      "outputPath": "D:\\Office Project\\Metro\\src\\Metro.Core\\obj\\",
+      "outputPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Md. Shafaet Hossain\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Office Project\\Metro\\src\\Shared\\Shared.csproj": {}
+    "D:\\code\\dotNet\\Metro\\src\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "D:\\Office Project\\Metro\\src\\Shared\\Shared.csproj": {
+    "D:\\code\\dotNet\\Metro\\src\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Office Project\\Metro\\src\\Shared\\Shared.csproj",
+        "projectUniqueName": "D:\\code\\dotNet\\Metro\\src\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "D:\\Office Project\\Metro\\src\\Shared\\Shared.csproj",
+        "projectPath": "D:\\code\\dotNet\\Metro\\src\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\",
-        "outputPath": "D:\\Office Project\\Metro\\src\\Shared\\obj\\",
+        "outputPath": "D:\\code\\dotNet\\Metro\\src\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Md. Shafaet Hossain\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -22,3 +22,15 @@ D:\Office Project\Metro\src\Metro.Core\obj\Debug\net6.0\Metro.Core.dll
 D:\Office Project\Metro\src\Metro.Core\obj\Debug\net6.0\refint\Metro.Core.dll
 D:\Office Project\Metro\src\Metro.Core\obj\Debug\net6.0\Metro.Core.pdb
 D:\Office Project\Metro\src\Metro.Core\obj\Debug\net6.0\ref\Metro.Core.dll
+D:\code\dotNet\Metro\src\Metro.Core\bin\Debug\net6.0\Metro.Core.deps.json
+D:\code\dotNet\Metro\src\Metro.Core\bin\Debug\net6.0\Metro.Core.dll
+D:\code\dotNet\Metro\src\Metro.Core\bin\Debug\net6.0\Metro.Core.pdb
+D:\code\dotNet\Metro\src\Metro.Core\obj\Debug\net6.0\Metro.Core.csproj.AssemblyReference.cache
+D:\code\dotNet\Metro\src\Metro.Core\obj\Debug\net6.0\Metro.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\dotNet\Metro\src\Metro.Core\obj\Debug\net6.0\Metro.Core.AssemblyInfoInputs.cache
+D:\code\dotNet\Metro\src\Metro.Core\obj\Debug\net6.0\Metro.Core.AssemblyInfo.cs
+D:\code\dotNet\Metro\src\Metro.Core\obj\Debug\net6.0\Metro.Core.csproj.CoreCompileInputs.cache
+D:\code\dotNet\Metro\src\Metro.Core\obj\Debug\net6.0\Metro.Core.dll
+D:\code\dotNet\Metro\src\Metro.Core\obj\Debug\net6.0\refint\Metro.Core.dll
+D:\code\dotNet\Metro\src\Metro.Core\obj\Debug\net6.0\Metro.Core.pdb
+D:\code\dotNet\Metro\src\Metro.Core\obj\Debug\net6.0\ref\Metro.Core.dll

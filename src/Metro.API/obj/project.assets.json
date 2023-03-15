@@ -4388,11 +4388,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Office Project\\Metro\\src\\Metro.API\\Metro.API.csproj",
+      "projectUniqueName": "D:\\code\\dotNet\\Metro\\src\\Metro.API\\Metro.API.csproj",
       "projectName": "Metro.API",
-      "projectPath": "D:\\Office Project\\Metro\\src\\Metro.API\\Metro.API.csproj",
+      "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.API\\Metro.API.csproj",
       "packagesPath": "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\",
-      "outputPath": "D:\\Office Project\\Metro\\src\\Metro.API\\obj\\",
+      "outputPath": "D:\\code\\dotNet\\Metro\\src\\Metro.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Md. Shafaet Hossain\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4409,11 +4409,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Office Project\\Metro\\src\\Metro.Application\\Metro.Application.csproj": {
-              "projectPath": "D:\\Office Project\\Metro\\src\\Metro.Application\\Metro.Application.csproj"
+            "D:\\code\\dotNet\\Metro\\src\\Metro.Application\\Metro.Application.csproj": {
+              "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Application\\Metro.Application.csproj"
             },
-            "D:\\Office Project\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj": {
-              "projectPath": "D:\\Office Project\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj"
+            "D:\\code\\dotNet\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj": {
+              "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj"
             }
           }
         }

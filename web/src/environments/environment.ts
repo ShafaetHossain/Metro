@@ -5,9 +5,6 @@
 export const environment = {
   production: false,
 
-
-  ///........................Service URLs STARTS........................///
-  
   Base_URL_Metro: 'http://localhost:5187/api'
 };
 
