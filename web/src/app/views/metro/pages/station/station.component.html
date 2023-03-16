@@ -3,7 +3,7 @@
     <h5>Station List</h5>
   </div>
   <c-container>
-    <c-row>
+    <c-row *ngIf="role == 'Admin'">
       <div class="col-sm-5 text-start mb-3 mt-3">
         <button class="btn btn-outline-primary" shape="rounded-0" (click)="addOrEdit(null)">Add
           <svg cIcon name="cil-plus"></svg>
@@ -16,18 +16,19 @@
           <thead>
             <tr>
               <th>Station Name</th>
-              <th class="text-center">Actions</th>
+              <th class="text-center" *ngIf="role == 'Admin'">Actions</th>
             </tr>
           </thead>
           <tbody *ngIf="stationList?.length!=0">
             <tr *ngFor="let item of stationList">
               <td><a cNavLink [active]="true" class="link-primary">{{ item.stationName }}</a></td>
-              <td class="text-center">
+              <td class="text-center" *ngIf="role == 'Admin'">
                 <button class="ang-btn-edit ang-icon-btn" cButton color="success" variant="outline"  title="edit"
                         (click)="addOrEdit(item.id)">
                   <svg cIcon name="cilPencil" class="ang-icon-edit" size="sm"></svg>
                 </button>
-                <button class="ang-icon-btn" cButton color="danger" variant="outline" title="delete" >
+                <button class="ang-icon-btn" cButton color="danger" variant="outline" title="delete"
+                        (click)="onDelete(item.id)" >
                   <svg cIcon name="cilTrash" class="ang-icon-delete" size="sm"></svg>
                 </button>
               </td>

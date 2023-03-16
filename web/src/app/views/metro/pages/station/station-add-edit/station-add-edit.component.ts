@@ -11,6 +11,7 @@ import { RoutingService } from '../../../../../core/services/routing.service';
   styleUrls: ['./station-add-edit.component.scss']
 })
 export class StationAddEditComponent implements OnInit{
+  role: any = localStorage.getItem('role');
   stationId: string = '';
   isAddMode: boolean = true;
 
@@ -29,6 +30,7 @@ export class StationAddEditComponent implements OnInit{
   }
 
   ngOnInit(): void {
+    console.log(localStorage.getItem('userInfo'));
     this.activateRouter.paramMap.subscribe((params) => {
       debugger;
       this.stationId = params.get('id') || '';

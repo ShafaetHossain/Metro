@@ -18,4 +18,9 @@ export class DefaultHeaderComponent extends HeaderComponent {
   constructor(private classToggler: ClassToggleService) {
     super();
   }
+
+  resetLocalStorage(){
+    localStorage.setItem('userinfoId', '');
+    localStorage.setItem('role', '');
+  }
 }

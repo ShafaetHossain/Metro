@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { environment } from '../../../../../environments/environment';
 import { Schedule } from '../../../../core/models/schedule/schedule.model';
@@ -13,6 +14,7 @@ import { RoutingService } from '../../../../core/services/routing.service';
 })
 export class ScheduleComponent implements OnInit {
 
+  role: any = localStorage.getItem('role');
   dtTrigger: Subject<any> = new Subject<any>();
   metroHost: string = environment.Base_URL_Metro;
   scheduleList: Schedule[] = [];
@@ -21,6 +23,7 @@ export class ScheduleComponent implements OnInit {
     private httpService : HttpService,
     private formBuilder: FormBuilder,
     private navigateService: RoutingService,
+    private router: Router
   ){}
 
   ngOnInit(): void {
@@ -45,6 +48,21 @@ export class ScheduleComponent implements OnInit {
       '/metro/schedule/' + (id != null ? 'edit/' + id : 'add'),
       id != null ? 'Edit Schedule' : 'Add Schedule'
     );
+  }
+
+  onDelete(id: string){
+    this.httpService
+      .delete(
+        environment.Base_URL_Metro,
+        `Schedule/${id}`, id
+      ).subscribe({
+        next: (res) => {
+          console.log("success");
+          this.router.navigate(['schedule']);
+        }, error: (err) => {
+          console.log(err);
+        }
+      })
   }
 
 }

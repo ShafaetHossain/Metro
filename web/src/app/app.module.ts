@@ -4,6 +4,7 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgToastModule } from 'ng-angular-popup';
 
 import {
   PERFECT_SCROLLBAR_CONFIG,
@@ -89,6 +90,7 @@ const APP_CONTAINERS = [
     ProgressModule,
     BadgeModule,
     ListGroupModule,
+    NgToastModule,
     CardModule,
     HttpClientModule,
     NgxsModule.forRoot([TabState, PermissionState], {

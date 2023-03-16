@@ -12,6 +12,7 @@ import { RoutingService } from '../../../../../core/services/routing.service';
   styleUrls: ['./schedule-add-edit.component.scss']
 })
 export class ScheduleAddEditComponent implements OnInit {
+  role: any = localStorage.getItem('role');
   scheduleId: string = '';
   stationList: Station[] = [];
   isAddMode: boolean = true;

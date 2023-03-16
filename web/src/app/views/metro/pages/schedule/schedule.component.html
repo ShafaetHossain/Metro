@@ -5,7 +5,7 @@
   <c-container>
     <c-row>
       <div class="col-sm-5 text-start mb-3 mt-3">
-        <button class="btn btn-outline-primary" shape="rounded-0" (click)="addOrEdit(null)">Add
+        <button class="btn btn-outline-primary" shape="rounded-0" *ngIf="role == 'Admin'" (click)="addOrEdit(null)">Add
           <svg cIcon name="cil-plus"></svg>
         </button>
       </div>
@@ -21,7 +21,7 @@
               <th>Total Seat</th>
               <th>Seat Available</th>
               <th>Price</th>
-              <th class="text-center">Actions</th>
+              <th class="text-center" *ngIf="role == 'Admin'">Actions</th>
             </tr>
           </thead>
           <tbody *ngIf="scheduleList?.length!=0">
@@ -32,12 +32,13 @@
               <td>{{ item.totalSeat }}</td>
               <td>{{ item.totalSeat - item.seatBooked }}</td>
               <td>{{ item.price }}</td>
-              <td class="text-center">
+              <td class="text-center" *ngIf="role == 'Admin'">
                 <button class="ang-btn-edit ang-icon-btn" cButton color="success" variant="outline"  title="edit"
                         (click)="addOrEdit(item.id)">
                   <svg cIcon name="cilPencil" class="ang-icon-edit" size="sm"></svg>
                 </button>
-                <button class="ang-icon-btn" cButton color="danger" variant="outline" title="delete" >
+                <button class="ang-icon-btn" cButton color="danger" variant="outline" title="delete" 
+                    (click)="onDelete(item.id)">
                   <svg cIcon name="cilTrash" class="ang-icon-delete" size="sm"></svg>
                 </button>
               </td>
@@ -55,6 +56,7 @@
             </tr>
           </tbody>
         </table>
+        
       </div>
     </c-row>
   </c-container>

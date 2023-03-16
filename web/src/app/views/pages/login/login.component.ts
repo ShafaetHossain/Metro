@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { environment } from '../../../../environments/environment';
 import { HttpService } from '../../../core/services/http.service';
 import { RoutingService } from '../../../core/services/routing.service';
+import { LoginResponse } from '../../../core/models/authenticate/loginResponse.model'
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-login',
@@ -12,12 +14,15 @@ import { RoutingService } from '../../../core/services/routing.service';
 })
 export class LoginComponent {
 
+  loginResponse: LoginResponse|any;
+
   loginForm!:FormGroup;
   constructor(
     private httpService: HttpService,
     private fb: FormBuilder,
     private router: Router,
-    private navigateService: RoutingService
+    private navigateService: RoutingService,
+    private toaster: NgToastService
   ) { }
 
   ngOnInit(): void {
@@ -35,13 +40,21 @@ export class LoginComponent {
         this.loginForm.value
       ).subscribe({
         next: (res) => {
-          console.log("success");
+          this.loginResponse = res as LoginResponse;
+          // console.log(this.loginResponse.result.id)
+          // console.log(this.loginResponse.result.role)
+          localStorage.setItem('userinfoId', this.loginResponse.result.id);
+          localStorage.setItem('role', this.loginResponse.result.role);
+          //console.log("response", this.loginResponse);
+          // console.log('localStorage',localStorage.getItem('userinfoId'));
+           console.log('localStorage',localStorage.getItem('role'));
+          
           this.navigateService.navigate(
             '/dashboard/',
             'Dashboard'
           );
         }, error:(err) => {
-          console.log(err);
+          this.toaster.error({detail: "ERROR", summary:"Something went wrong!", duration:5000});
         }
       })
     }

@@ -34,3 +34,15 @@ D:\code\dotNet\Metro\src\Shared\obj\Debug\net6.0\Shared.dll
 D:\code\dotNet\Metro\src\Shared\obj\Debug\net6.0\refint\Shared.dll
 D:\code\dotNet\Metro\src\Shared\obj\Debug\net6.0\Shared.pdb
 D:\code\dotNet\Metro\src\Shared\obj\Debug\net6.0\ref\Shared.dll
+D:\project\Metro\src\Shared\bin\Debug\net6.0\Shared.deps.json
+D:\project\Metro\src\Shared\bin\Debug\net6.0\Shared.dll
+D:\project\Metro\src\Shared\bin\Debug\net6.0\Shared.pdb
+D:\project\Metro\src\Shared\obj\Debug\net6.0\Shared.csproj.AssemblyReference.cache
+D:\project\Metro\src\Shared\obj\Debug\net6.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\Metro\src\Shared\obj\Debug\net6.0\Shared.AssemblyInfoInputs.cache
+D:\project\Metro\src\Shared\obj\Debug\net6.0\Shared.AssemblyInfo.cs
+D:\project\Metro\src\Shared\obj\Debug\net6.0\Shared.csproj.CoreCompileInputs.cache
+D:\project\Metro\src\Shared\obj\Debug\net6.0\Shared.dll
+D:\project\Metro\src\Shared\obj\Debug\net6.0\refint\Shared.dll
+D:\project\Metro\src\Shared\obj\Debug\net6.0\Shared.pdb
+D:\project\Metro\src\Shared\obj\Debug\net6.0\ref\Shared.dll

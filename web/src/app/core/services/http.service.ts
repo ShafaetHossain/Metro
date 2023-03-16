@@ -36,6 +36,12 @@ export class HttpService {
       .pipe(retry(0), catchError(this.handleError));
   }
 
+  delete<T>(url: string, endpoint: string, item: T) {
+    return this.httpClient
+      .delete<T>(`${url}/${endpoint}`, this.httpOptions)
+      .pipe(retry(0), catchError(this.handleError));
+  }
+
   private handleError(error: HttpErrorResponse) {
     let errorMessage = '';
 

@@ -55,7 +55,7 @@
 
           <div class="row mt-2">
             <div class="col-sm-5 text-start mb-3 mt-3">
-              <button type="submit" class="btn-save" (click)="onSubmit()">
+              <button *ngIf="role == 'Admin'" type="submit" class="btn-save" (click)="onSubmit()">
                 Save
               </button>
             </div>

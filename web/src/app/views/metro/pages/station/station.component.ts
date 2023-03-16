@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { environment } from '../../../../../environments/environment';
 import { Station } from '../../../../core/models/station/station.model';
@@ -12,7 +13,7 @@ import { RoutingService } from '../../../../core/services/routing.service';
   styleUrls: ['./station.component.scss']
 })
 export class StationComponent implements OnInit {
-  
+  role: any = localStorage.getItem('role');
   dtTrigger: Subject<any> = new Subject<any>();
   metroHost: string = environment.Base_URL_Metro;
   stationList: Station[] = [
@@ -26,6 +27,7 @@ export class StationComponent implements OnInit {
     private httpService : HttpService,
     private formBuilder: FormBuilder,
     private navigateService: RoutingService,
+    private router: Router
   ){}
 
   ngOnInit(): void {
@@ -51,6 +53,21 @@ export class StationComponent implements OnInit {
       '/metro/station/' + (id != null ? 'edit/' + id : 'add'),
       id != null ? 'Edit Station' : 'Add Station'
     );
+  }
+
+  onDelete(id: string){
+    this.httpService
+      .delete(
+        environment.Base_URL_Metro,
+        `Station/${id}`, id
+      ).subscribe({
+        next: (res) => {
+          console.log("success");
+          this.router.navigate(['station']);
+        }, error: (err) => {
+          console.log(err);
+        }
+      })
   }
 
 }
