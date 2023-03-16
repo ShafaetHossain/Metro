@@ -40,12 +40,12 @@ namespace Metro.Application.CommandHandlers.Stations
             var stationEntity = _mapper.Map<UpdateStationCommand, Station>(request, currentStation);
 
             //update the entity and collect the response
-            var updateStationEntity = _stationCommandRepository.UpdateAsync(stationEntity);
+            var updateStationEntity = await _stationCommandRepository.UpdateAsync(stationEntity);
 
             //commit changes
             await _unitOfWork.CommitAsync(cancellationToken);
 
-            return _mapper.Map<StationResponseDTO>(updateStationEntity.Result);
+            return _mapper.Map<StationResponseDTO>(updateStationEntity);
         }
     }
 }
