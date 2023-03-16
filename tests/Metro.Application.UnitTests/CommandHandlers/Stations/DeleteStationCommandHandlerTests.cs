@@ -49,7 +49,6 @@ namespace Metro.Application.UnitTests.CommandHandlers.Stations
         {
             _stationQueryRepositoryMock.Setup(x => x.GetByIdAsync(It.IsAny<Guid>())).ReturnsAsync(new Station());
             _stationCommandRepositoryMock.Setup(x => x.UpdateAsync(It.IsAny<Station>())).Returns(Task.FromResult(new Station()));
-            //_mediatorMock.Setup(m => m.Send(It.IsAny<GetCountryByIdQuery>(), It.IsAny<CancellationToken>())).ReturnsAsync(new CountryResponseDTO());
 
             // act
             var result = await _handler.Handle(new DeleteStationCommand(Guid.NewGuid()), CancellationToken.None);
