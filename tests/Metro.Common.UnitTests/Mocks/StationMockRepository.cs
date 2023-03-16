@@ -21,7 +21,7 @@ namespace Metro.Common.UnitTests.Mocks
 
         private static Station Station = new Station
         {
-            Id = Guid.NewGuid(),
+            Id = new Guid("40979b45-9ab6-40be-9a4d-7aa01d226d27"),
             StationName = "Mirpur-10"
         };
 
@@ -40,7 +40,7 @@ namespace Metro.Common.UnitTests.Mocks
 
         public static Mock<IStationQueryRepository> GetStationByIdQueryRepository()
         {
-            Guid id = Guid.NewGuid();
+            Guid id = new Guid("40979b45-9ab6-40be-9a4d-7aa01d226d27");
             var repositoryMock = new Mock<IStationQueryRepository>();
             repositoryMock.Setup(x => x.GetByIdAsync(id)).ReturnsAsync(Station);
             return repositoryMock;
