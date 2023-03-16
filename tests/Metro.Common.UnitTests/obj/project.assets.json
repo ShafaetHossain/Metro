@@ -6886,19 +6886,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\": {}
+    "C:\\Users\\shafaet\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\dotNet\\Metro\\tests\\Metro.Common.UnitTests\\Metro.Common.UnitTests.csproj",
+      "projectUniqueName": "D:\\project\\Metro\\tests\\Metro.Common.UnitTests\\Metro.Common.UnitTests.csproj",
       "projectName": "Metro.Common.UnitTests",
-      "projectPath": "D:\\code\\dotNet\\Metro\\tests\\Metro.Common.UnitTests\\Metro.Common.UnitTests.csproj",
-      "packagesPath": "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\dotNet\\Metro\\tests\\Metro.Common.UnitTests\\obj\\",
+      "projectPath": "D:\\project\\Metro\\tests\\Metro.Common.UnitTests\\Metro.Common.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\shafaet\\.nuget\\packages\\",
+      "outputPath": "D:\\project\\Metro\\tests\\Metro.Common.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Md. Shafaet Hossain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shafaet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6912,11 +6917,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\code\\dotNet\\Metro\\src\\Metro.Application\\Metro.Application.csproj": {
-              "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Application\\Metro.Application.csproj"
+            "D:\\project\\Metro\\src\\Metro.Application\\Metro.Application.csproj": {
+              "projectPath": "D:\\project\\Metro\\src\\Metro.Application\\Metro.Application.csproj"
             },
-            "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj": {
-              "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj"
+            "D:\\project\\Metro\\src\\Metro.Core\\Metro.Core.csproj": {
+              "projectPath": "D:\\project\\Metro\\src\\Metro.Core\\Metro.Core.csproj"
             }
           }
         }

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\code\\dotNet\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj": {}
+    "D:\\project\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\code\\dotNet\\Metro\\src\\Metro.Application\\Metro.Application.csproj": {
+    "D:\\project\\Metro\\src\\Metro.Application\\Metro.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\dotNet\\Metro\\src\\Metro.Application\\Metro.Application.csproj",
+        "projectUniqueName": "D:\\project\\Metro\\src\\Metro.Application\\Metro.Application.csproj",
         "projectName": "Metro.Application",
-        "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Application\\Metro.Application.csproj",
-        "packagesPath": "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Application\\obj\\",
+        "projectPath": "D:\\project\\Metro\\src\\Metro.Application\\Metro.Application.csproj",
+        "packagesPath": "C:\\Users\\shafaet\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Metro\\src\\Metro.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Md. Shafaet Hossain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shafaet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj": {
-                "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj"
+              "D:\\project\\Metro\\src\\Metro.Core\\Metro.Core.csproj": {
+                "projectPath": "D:\\project\\Metro\\src\\Metro.Core\\Metro.Core.csproj"
               },
-              "D:\\code\\dotNet\\Metro\\src\\Shared\\Shared.csproj": {
-                "projectPath": "D:\\code\\dotNet\\Metro\\src\\Shared\\Shared.csproj"
+              "D:\\project\\Metro\\src\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\project\\Metro\\src\\Shared\\Shared.csproj"
               }
             }
           }
@@ -110,17 +114,21 @@
         }
       }
     },
-    "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj": {
+    "D:\\project\\Metro\\src\\Metro.Core\\Metro.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj",
+        "projectUniqueName": "D:\\project\\Metro\\src\\Metro.Core\\Metro.Core.csproj",
         "projectName": "Metro.Core",
-        "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj",
-        "packagesPath": "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\obj\\",
+        "projectPath": "D:\\project\\Metro\\src\\Metro.Core\\Metro.Core.csproj",
+        "packagesPath": "C:\\Users\\shafaet\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Metro\\src\\Metro.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Md. Shafaet Hossain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shafaet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -165,17 +173,21 @@
         }
       }
     },
-    "D:\\code\\dotNet\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj": {
+    "D:\\project\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\dotNet\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj",
+        "projectUniqueName": "D:\\project\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj",
         "projectName": "Metro.Infrastructure",
-        "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Infrastructure\\obj\\",
+        "projectPath": "D:\\project\\Metro\\src\\Metro.Infrastructure\\Metro.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\shafaet\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Metro\\src\\Metro.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Md. Shafaet Hossain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shafaet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -189,11 +201,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\code\\dotNet\\Metro\\src\\Metro.Application\\Metro.Application.csproj": {
-                "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Application\\Metro.Application.csproj"
+              "D:\\project\\Metro\\src\\Metro.Application\\Metro.Application.csproj": {
+                "projectPath": "D:\\project\\Metro\\src\\Metro.Application\\Metro.Application.csproj"
               },
-              "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj": {
-                "projectPath": "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj"
+              "D:\\project\\Metro\\src\\Metro.Core\\Metro.Core.csproj": {
+                "projectPath": "D:\\project\\Metro\\src\\Metro.Core\\Metro.Core.csproj"
               }
             }
           }
@@ -261,17 +273,21 @@
         }
       }
     },
-    "D:\\code\\dotNet\\Metro\\src\\Shared\\Shared.csproj": {
+    "D:\\project\\Metro\\src\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\dotNet\\Metro\\src\\Shared\\Shared.csproj",
+        "projectUniqueName": "D:\\project\\Metro\\src\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "D:\\code\\dotNet\\Metro\\src\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\Md. Shafaet Hossain\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\dotNet\\Metro\\src\\Shared\\obj\\",
+        "projectPath": "D:\\project\\Metro\\src\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\shafaet\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\Metro\\src\\Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Md. Shafaet Hossain\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shafaet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4S6fWNzyDIQyr5CNbsq0HMdZCFvcO96ljWmah//Qn7V8wrDAFJxUiYe6/9Obe06NJF3/EzaLsoBUjMmrNWCJWg==",
+  "dgSpecHash": "+Jo8V0Zpwh9h4TMeEHi1953EMTjweXhQU34ugeCql8iPz2xAAcfCVsAquj6z8qrmTN3Fo1nELo9pUQyMrb76Yg==",
   "success": true,
-  "projectFilePath": "D:\\code\\dotNet\\Metro\\src\\Metro.Core\\Metro.Core.csproj",
+  "projectFilePath": "D:\\project\\Metro\\src\\Metro.Core\\Metro.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
