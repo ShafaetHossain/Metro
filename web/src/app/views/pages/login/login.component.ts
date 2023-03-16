@@ -7,6 +7,9 @@ import { RoutingService } from '../../../core/services/routing.service';
 import { LoginResponse } from '../../../core/models/authenticate/loginResponse.model'
 import { NgToastService } from 'ng-angular-popup';
 
+import Swal from 'sweetalert2';
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -47,7 +50,8 @@ export class LoginComponent {
           localStorage.setItem('role', this.loginResponse.result.role);
           //console.log("response", this.loginResponse);
           // console.log('localStorage',localStorage.getItem('userinfoId'));
-           console.log('localStorage',localStorage.getItem('role'));
+          //console.log('localStorage',localStorage.getItem('role'));
+          Swal.fire('User Login', 'Successful!', 'info');
           
           this.navigateService.navigate(
             '/dashboard/',
