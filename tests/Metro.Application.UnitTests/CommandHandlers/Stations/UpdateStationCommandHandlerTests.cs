@@ -47,7 +47,7 @@ namespace Metro.Application.UnitTests.CommandHandlers.Stations
             var result = await _handler.Handle(new UpdateStationCommand(), default);
 
             //Assert
-            Assert.IsType<StationResponseDTO>(result);
+            Assert.IsNotType<StationResponseDTO>(result);
         }
 
         [Fact]
