@@ -21,25 +21,30 @@
               <th>Total Seat</th>
               <th>Seat Available</th>
               <th>Price</th>
-              <th class="text-center" *ngIf="role == 'Admin'">Actions</th>
+              <th class="text-center">Actions</th>
             </tr>
           </thead>
           <tbody *ngIf="scheduleList?.length!=0">
             <tr *ngFor="let item of scheduleList">
-              <td>{{ item.stationFromId }}</td>
-              <td>{{ item.stationToId }}</td>
+              <td>{{ map.get(item.stationFromId) }}</td>
+              <td>{{ map.get(item.stationToId) }}</td>
               <td>{{ item.departureTime }}</td>
               <td>{{ item.totalSeat }}</td>
               <td>{{ item.totalSeat - item.seatBooked }}</td>
               <td>{{ item.price }}</td>
-              <td class="text-center" *ngIf="role == 'Admin'">
+              <td class="text-center">
                 <button class="ang-btn-edit ang-icon-btn" cButton color="success" variant="outline"  title="edit"
-                        (click)="addOrEdit(item.id)">
+                        (click)="addOrEdit(item.id)" *ngIf="role == 'Admin'">
                   <svg cIcon name="cilPencil" class="ang-icon-edit" size="sm"></svg>
                 </button>
                 <button class="ang-icon-btn" cButton color="danger" variant="outline" title="delete" 
-                    (click)="onDelete(item.id)">
+                    (click)="onDelete(item.id)" *ngIf="role == 'Admin'">
                   <svg cIcon name="cilTrash" class="ang-icon-delete" size="sm"></svg>
+                </button>
+                <button class="ang-icon-btn" cButton color="success" variant="outline" title="delete" 
+                    (click)="addOrEdit(item.id)">
+                  <!-- <svg cIcon name="cil-money" class="ang-icon-delete" size="sm"></svg> -->
+                  Buy
                 </button>
               </td>
             </tr>
