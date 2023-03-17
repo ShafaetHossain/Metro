@@ -21,7 +21,7 @@
           <div class="row mb-2">
             <div class="col d-flex align-items-center">
               <p class="me-2 mb-0 w-25 ">Seat Available</p>
-              <input type="number" formControlName="seatAvailable" value="{{seatAvailable}}">
+              <input type="number" readonly formControlName="seatAvailable" value="{{seatAvailable}}">
             </div>
 
             <div class="col d-flex align-items-center">
@@ -40,13 +40,13 @@
             </div>
           </div> -->
 
-          <!-- <div class="row mt-2">
+          <div class="row mt-2">
             <div class="col-sm-5 text-start mb-3 mt-3">
-              <button *ngIf="role == 'Admin'" type="submit" class="btn-save" (click)="onSubmit()">
-                Save
+              <button type="submit" class="btn-save" (click)="buy()">
+                Buy
               </button>
             </div>
-          </div> -->
+          </div>
         </div>
       </c-container>
     </form>

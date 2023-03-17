@@ -81,4 +81,6 @@ export class TicketBuyComponent implements OnInit{
       })
   }
 
+  buy(){}
+
 }
