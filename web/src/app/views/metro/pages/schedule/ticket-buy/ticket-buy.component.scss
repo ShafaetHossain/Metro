@@ -1,0 +1,51 @@
+*{
+  /* border: none; */
+  outline: none;
+}
+.header-color{
+background-color: #8bcdfc;
+}
+
+.accordion-itemOne img {
+
+width: 50px;
+padding: 5px;
+}
+
+.accordion-itemTwo img {
+
+width: 70px;
+}
+
+/* body card */
+.accordion-body-card{
+text-align: center;
+margin-left: 50px;
+
+}
+.accordion-body-card input{
+width: 100%;
+margin: 4px;
+padding: 4px;
+}
+
+
+/* body  online*/
+.accordion-body-online{
+ text-align: center;
+ 
+}
+
+.accordion-body-online ::-webkit-input-placeholder,
+.accordion-body-card ::-webkit-input-placeholder
+{text-align: center;}
+
+.accordion-body-online p{
+margin: 4px 0!important;
+}
+
+p a{
+cursor: pointer;
+/* text-decoration: underline !important; */
+color: #4d69f2 !important;
+}

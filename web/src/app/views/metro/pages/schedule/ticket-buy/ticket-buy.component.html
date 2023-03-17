@@ -42,11 +42,112 @@
 
           <div class="row mt-2">
             <div class="col-sm-5 text-start mb-3 mt-3">
-              <button type="submit" class="btn-save" (click)="buy()">
-                Buy
+              <button type="button" class="btn-save" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Buy now
               </button>
             </div>
           </div>
+
+          
+
+          
+
+          <!-- Button trigger modal -->
+      
+    
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class=" header-color">
+              <div class="modal-header border-0">
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="d-flex justify-content-center"><h4 class="mb-4">Payment method</h4></div>  
+            </div>
+            <!-- modal body -->
+            <div class="modal-body container border-0  ">
+              <!-- accordion one -->
+              <div class="accordion" id="accordionExample">
+                <span class="">CARD:</span>
+                <div class="accordion-item my-1 accordion-itemOne">
+                  <div class="accordion-header" id="headingOne">
+                    <div class="accordion_image">
+                      <!-- <img  src='../../../../../image/card/test.gif' class=" border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"/> 
+                      <img src="../../../../../image/card/amex.jpg" class=" border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"/>  
+                      <img src="../../../../../image/card/mastercard.jpg" class=" border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"/> 
+                      <img src="../../../../../image/card/unionpay.jpg" class=" border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"/>  -->
+                      <button type="submit" class="btn-save" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Visa
+                      </button>
+                      <button type="submit" class="btn-save" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Amex
+                      </button>
+                      <button type="submit" class="btn-save" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Mastercard
+                      </button>
+                      <button type="submit" class="btn-save" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Unionpay
+                      </button>
+                    </div>  
+                  </div>
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse  " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body accordion-body-card w-75 ">
+                    <input type="text" id="text" name="text"   placeholder="Enter Card Number">
+                    <input type="text" id="text" name="text"   placeholder="Enter Holder Name">
+                  </div>
+                  <p>By clicking on confirm you are agreeing to the <a>Terms & condition</a></p>
+                  <div class="modal-footer border-0">
+                    
+                    <button type="button" class="btn btn-primary" (click)="buy()" data-bs-dismiss="modal">Confirm</button>
+                  </div>
+                </div>
+                <!-- accordion two -->
+                <span class="">Online payment:</span>
+                <div class="accordion-item accordion-itemTwo border border-top-1 my-1">
+                  <div class="accordion-header" id="headingTwo">
+                    <div class="accordion_image">
+                      <button type="submit" class="btn-save" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Bkash
+                      </button>
+                      <button type="submit" class="btn-save" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Upay
+                      </button>
+                      <button type="submit" class="btn-save" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Rocket
+                      </button>
+                      <button type="submit" class="btn-save" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Cellfine
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="collapseTwo" class="accordion-collapse collapse mt-4" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body accordion-body-online">
+                  <p>Your account number</p>
+                  <input type="number" id="number" name="number"   placeholder="e.g 01XXXXXXXXX">
+                  <p>By clicking on confirm you are agreeing to the <a>Terms & condition</a></p>
+                </div>
+                <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-primary" (click)="buy()" data-bs-dismiss="modal">Confirm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
         </div>
       </c-container>
     </form>
