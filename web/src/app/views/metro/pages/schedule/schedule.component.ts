@@ -68,6 +68,13 @@ export class ScheduleComponent implements OnInit {
     );
   }
 
+  ticketBuy(id: string){
+    this.navigateService.navigate(
+      '/metro/schedule/' + 'buy/' + id,
+      'Ticket Info'
+    );
+  }
+
   onDelete(id: string){
     this.httpService
       .delete(
