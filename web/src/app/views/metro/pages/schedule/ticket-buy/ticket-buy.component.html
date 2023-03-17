@@ -1,1 +1,54 @@
-<p>ticket-buy works!</p>
+<c-card>
+  <div class="card-header">
+    <h5>Ticket Info</h5>
+  </div>
+  <c-card-body>
+    <form [formGroup]="scheduleForm">
+      <input type="hidden" formControlName="id" />
+      <c-container>
+        <div class="container  mt-4">
+          <div class="row mb-2 ">
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25">From</p>
+              <input type="text" style="width:187px;" readonly formControlName="stationFromId" value="{{from}}">
+            </div>
+
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25">To</p>
+              <input type="text" style="width:187px;" readonly formControlName="stationToId" value="{{to}}">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25 ">Seat Available</p>
+              <input type="number" formControlName="seatAvailable" value="{{seatAvailable}}">
+            </div>
+
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25">Seat book</p>
+              <input type="number" formControlName="seatBooked">
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25">Departure time</p>
+              <input type="date" style="width:187px;" formControlName="departureTime">
+            </div>
+            <div class="col d-flex align-items-center">
+              <p class="me-2 mb-0 w-25 ">Price</p>
+              <input type="number" formControlName="price">
+            </div>
+          </div> -->
+
+          <!-- <div class="row mt-2">
+            <div class="col-sm-5 text-start mb-3 mt-3">
+              <button *ngIf="role == 'Admin'" type="submit" class="btn-save" (click)="onSubmit()">
+                Save
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </c-container>
+    </form>
+  </c-card-body>
+</c-card>
