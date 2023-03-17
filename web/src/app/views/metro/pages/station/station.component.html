@@ -3,9 +3,9 @@
     <h5>Station List</h5>
   </div>
   <c-container>
-    <c-row *ngIf="role == 'Admin'">
+    <c-row>
       <div class="col-sm-5 text-start mb-3 mt-3">
-        <button class="btn btn-outline-primary" shape="rounded-0" (click)="addOrEdit(null)">Add
+        <button class="btn btn-outline-primary" shape="rounded-0" *ngIf="role == 'Admin'" (click)="addOrEdit(null)">Add
           <svg cIcon name="cil-plus"></svg>
         </button>
       </div>
