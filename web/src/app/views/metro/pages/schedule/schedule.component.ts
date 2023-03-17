@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { environment } from '../../../../../environments/environment';
 import { Schedule } from '../../../../core/models/schedule/schedule.model';
+import { Station } from '../../../../core/models/station/station.model';
 import { HttpService } from '../../../../core/services/http.service';
 import { RoutingService } from '../../../../core/services/routing.service';
 
@@ -18,6 +19,9 @@ export class ScheduleComponent implements OnInit {
   dtTrigger: Subject<any> = new Subject<any>();
   metroHost: string = environment.Base_URL_Metro;
   scheduleList: Schedule[] = [];
+  stationList: Station[] = []
+
+  map = new Map();
 
   constructor(
     private httpService : HttpService,
@@ -37,6 +41,20 @@ export class ScheduleComponent implements OnInit {
         var result = res as any;
         this.scheduleList = result.items;
         console.log(this.scheduleList);
+      }, error: (err) => {
+        console.log(err);
+      },
+    });
+
+    this.httpService.get(this.metroHost, 'Station')
+    .subscribe({
+      next: (res) => {
+        var result = res as any;
+        this.stationList = result.items;
+        for (var station of this.stationList) {
+          this.map.set(station.id, station.stationName);
+        }
+        console.log(this.stationList);
       }, error: (err) => {
         console.log(err);
       },
