@@ -23,6 +23,10 @@ namespace Metro.Application.CommandHandlers.Schedules
 
         public async Task<ScheduleResponseDTO> Handle(CreateScheduleCommand request, CancellationToken cancellationToken)
         {
+            if (request.TotalSeat < request.SeatBooked)
+            {
+                throw new Exception("Please input valid Seat Book number");
+            }
             //map request type to entity(table) type so that we can insert
             var entity = _mapper.Map<Schedule>(request);
 

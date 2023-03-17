@@ -33,6 +33,10 @@ namespace Metro.Application.CommandHandlers.Schedules
             {
                 throw new NotFoundException("Schedule not found");
             }
+            if(request.TotalSeat < request.SeatBooked)
+            {
+                throw new Exception("Please input valid Seat Book number");
+            }
             //map request type to entity(table) type so that we can update
             var scheduleEntity = _mapper.Map<UpdateScheduleCommand, Schedule>(request, currentSchedule);
 
