@@ -51,14 +51,21 @@ export class LoginComponent {
           //console.log("response", this.loginResponse);
           // console.log('localStorage',localStorage.getItem('userinfoId'));
           //console.log('localStorage',localStorage.getItem('role'));
-          Swal.fire('User Login', 'Successful!', 'info');
+          Swal.fire('User Login', 'Successful!', 'success');
           
           this.navigateService.navigate(
             '/dashboard/',
             'Dashboard'
           );
         }, error:(err) => {
-          this.toaster.error({detail: "ERROR", summary:"Something went wrong!", duration:5000});
+          Swal.fire('', 'Something went wrong!', 'error');
+          // Swal.fire({  
+          //   position: 'top-end',  
+          //   icon: 'error',  
+          //   title: 'Something went wrong',  
+          //   showConfirmButton: false,  
+          //   timer: 1500  
+          // })  
         }
       })
     }

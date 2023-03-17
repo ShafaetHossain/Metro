@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 import { environment } from '../../../../../../environments/environment';
 import { HttpService } from '../../../../../core/services/http.service';
 import { RoutingService } from '../../../../../core/services/routing.service';
@@ -71,14 +72,16 @@ export class StationAddEditComponent implements OnInit{
         )
         .subscribe({
           next:(res) => {
+            Swal.fire('Station Update', 'Successfully!', 'success');
             this.navigateService.navigate(
               '/metro/station/',
               'Station'
             );
           },
           error:(err) => {
-            debugger;
-            console.log(err);
+            Swal.fire('', 'Something went wrong!', 'error');
+            // debugger;
+            // console.log(err);
           }
         })
       } else {
@@ -89,14 +92,16 @@ export class StationAddEditComponent implements OnInit{
         )
         .subscribe({
           next:(res) => {
+            Swal.fire('Station Added', 'Successfully!', 'success');
             this.navigateService.navigate(
               '/metro/station/',
               'Station'
             );
           },
           error:(err) => {
-            debugger;
-            console.log(err);
+            Swal.fire('', 'Something went wrong!', 'error');
+            // debugger;
+            // console.log(err);
           }
         })
       }

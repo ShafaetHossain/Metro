@@ -3,6 +3,7 @@ import { HttpService } from '../../../core/services/http.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from '../../../../environments/environment';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-register',
@@ -37,19 +38,18 @@ export class RegisterComponent {
       )
       .subscribe({
         next:(res) => {
-          debugger;
-          console.log(res);
+          Swal.fire('User Added', 'Successful!', 'success');
           this.router.navigate(['login']);
         },
         error:(err) => {
-          debugger;
-          console.log(err);
+          Swal.fire('', 'Something went wrong!', 'error');
         }
       })
     }
     else{
-      console.log("Failed");
-      this.registerForm.markAllAsTouched();
+      Swal.fire('', 'Something went wrong!', 'error');
+      // console.log("Failed");
+      // this.registerForm.markAllAsTouched();
     }
   }
 

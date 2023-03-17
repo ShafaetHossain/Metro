@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { environment } from '../../../../../../environments/environment';
 import { Station } from '../../../../../core/models/station/station.model';
 import { HttpService } from '../../../../../core/services/http.service';
@@ -91,14 +92,16 @@ export class ScheduleAddEditComponent implements OnInit {
         )
         .subscribe({
           next:(res) => {
+            Swal.fire('Schedule Update', 'Successfully!', 'success');
             this.navigateService.navigate(
               '/metro/schedule/',
               'Schedule'
             );
           },
           error:(err) => {
-            debugger;
-            console.log(err);
+            Swal.fire('', 'Something went wrong!', 'error');
+            // debugger;
+            // console.log(err);
           }
         })
       } else {
@@ -109,14 +112,16 @@ export class ScheduleAddEditComponent implements OnInit {
         )
         .subscribe({
           next:(res) => {
+            Swal.fire('Schedule Added', 'Successfully!', 'success');
             this.navigateService.navigate(
               '/metro/schedule/',
               'Schedule'
             );
           },
           error:(err) => {
-            debugger;
-            console.log(err);
+            Swal.fire('', 'Something went wrong!', 'error');
+            // debugger;
+            // console.log(err);
           }
         })
       }
