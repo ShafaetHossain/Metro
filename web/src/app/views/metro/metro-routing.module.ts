@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ScheduleAddEditComponent } from './pages/schedule/schedule-add-edit/schedule-add-edit.component';
 import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { StationComponent } from './pages/station/station.component';
 import { StationAddEditComponent } from './pages/station/station-add-edit/station-add-edit.component';
+import { TicketBuyComponent } from './pages/schedule/ticket-buy/ticket-buy.component';
 
 const routes: Routes = [
     {
@@ -60,6 +61,14 @@ const routes: Routes = [
             reuse: false
           }
         },
+        {
+          path: 'schedule/buy/:id',
+          component: TicketBuyComponent,
+          data: {
+            title: 'Ticket Info',
+            reuse: false
+          }
+        }
       ]
     }
 ];

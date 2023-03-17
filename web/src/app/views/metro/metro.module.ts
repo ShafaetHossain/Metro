@@ -23,6 +23,7 @@ import { StationComponent } from './pages/station/station.component';
 import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { ScheduleAddEditComponent } from './pages/schedule/schedule-add-edit/schedule-add-edit.component';
 import { StationAddEditComponent } from './pages/station/station-add-edit/station-add-edit.component';
+import { TicketBuyComponent } from './pages/schedule/ticket-buy/ticket-buy.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { StationAddEditComponent } from './pages/station/station-add-edit/statio
     StationComponent,
     ScheduleComponent,
     ScheduleAddEditComponent,
-    StationAddEditComponent
+    StationAddEditComponent,
+    TicketBuyComponent
   ],
   imports: [
     CommonModule,
