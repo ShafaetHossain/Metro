@@ -47,7 +47,7 @@ export class ScheduleAddEditComponent implements OnInit {
     })
   }
 
-  loadSchedule(){
+  loadStation(){
     this.httpService
       .get(environment.Base_URL_Metro, 'Station')
       .subscribe({
@@ -62,7 +62,7 @@ export class ScheduleAddEditComponent implements OnInit {
   }
 
   initData(){  
-    this.loadSchedule();
+    this.loadStation();
     if(!this.isAddMode){
       debugger;
       this.httpService
