@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { environment } from '../../../../../../environments/environment';
 import { Schedule } from '../../../../../core/models/schedule/schedule.model';
 import { Station } from '../../../../../core/models/station/station.model';
@@ -14,8 +15,10 @@ import { RoutingService } from '../../../../../core/services/routing.service';
 })
 export class TicketBuyComponent implements OnInit{
 
+  userId: any = localStorage.getItem('userinfoId');
   scheduleId: string = '';
   scheduleForm! : FormGroup;
+  ticketForm! : FormGroup;
   stationList: Station[] = [];
   map = new Map();
   from: string = '';
@@ -33,9 +36,14 @@ export class TicketBuyComponent implements OnInit{
       id: [''],
       stationFromId: ["", Validators.required],
       stationToId: ["", Validators.required],
-      seatAvailable: ["", Validators.required],
+      seatAvailable: [0, Validators.required],
       seatBook: [0, Validators.required],
-    })
+    });
+    this.ticketForm = this.fb.group({
+      scheduleId: [''],
+      userId: [''],
+      buySeat: [0, Validators.required],
+    });
   }
 
   ngOnInit(): void {
@@ -72,8 +80,6 @@ export class TicketBuyComponent implements OnInit{
           this.from = this.map.get(schedule.stationFromId);
           this.to = this.map.get(schedule.stationToId);
           this.seatAvailable = schedule.totalSeat - schedule.seatBooked;
-          console.log('id', this.scheduleId);
-          console.log('res', schedule);
           this.scheduleForm.patchValue(schedule);
         }, error: (err) => {
           console.log(err);
@@ -81,6 +87,41 @@ export class TicketBuyComponent implements OnInit{
       })
   }
 
-  buy(){}
+  buy(){
+    debugger;
+    this.scheduleForm.value.seatAvailable = this.seatAvailable;
+    if(this.scheduleForm.valid){
+      if(this.scheduleForm.value.seatAvailable < this.scheduleForm.value.seatBook){
+        Swal.fire('', 'Please buy valid amount of seat ticket', 'error');
+      }
+      else{
+        this.ticketForm.value.scheduleId = this.scheduleId;
+        this.ticketForm.value.userId = this.userId;
+        this.ticketForm.value.buySeat = this.scheduleForm.value.seatBook;
+        this.httpService.post(
+          environment.Base_URL_Metro,
+          'TicketInfo/buyTicket',
+          this.ticketForm.value
+        )
+        .subscribe({
+          next: (res) => {
+            Swal.fire('Ticket Buy', 'Successfully!', 'success');
+            this.navigateService.navigate(
+              '/metro/schedule/',
+              'Schedule'
+            );
+          },
+          error:(err) => {
+            Swal.fire('', 'Something went wrong!', 'error');
+            // debugger;
+            // console.log(err);
+          }
+        })
+      }
+    } else{
+      console.log(this.scheduleForm.value);
+      Swal.fire('', 'Something went wrong!', 'error');
+    }
+  }
 
 }
